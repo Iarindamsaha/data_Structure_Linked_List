@@ -29,6 +29,15 @@ public class Main {
         list4.displayAll();
         list4.insert(30,1);
         list4.displayAll();
+        System.out.println("---UC5---");
+        LinkedProblems<Integer> list5 = new LinkedProblems<>();
+        list5.addFirst(56);
+        list5.addLast(30);
+        list5.addLast(70);
+        list5.displayAll();
+        System.out.println("Deleted Item Is : " + list5.pop());
+        list5.displayAll();
+
 
     }
 }

@@ -60,6 +60,17 @@ public class LinkedProblems<Integer> {
 
     }
 
+    public Integer pop(){
+        Integer value = (Integer) head.value;
+        head = head.next;
+
+        if(head == null){
+            tail = null;
+        }
+        size --;
+        return value;
+    }
+
 
 
     public void displayAll(){
