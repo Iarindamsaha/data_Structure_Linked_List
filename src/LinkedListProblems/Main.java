@@ -22,6 +22,13 @@ public class Main {
         list3.addLast(30);
         list3.addLast(70);
         list3.displayAll();
+        System.out.println("---UC4---");
+        LinkedProblems<Integer> list4 = new LinkedProblems<>();
+        list4.addFirst(56);
+        list4.addLast(70);
+        list4.displayAll();
+        list4.insert(30,1);
+        list4.displayAll();
 
     }
 }
