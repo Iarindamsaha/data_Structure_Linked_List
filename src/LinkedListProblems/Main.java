@@ -10,6 +10,12 @@ public class Main {
         list.addFirst(30);
         list.addFirst(70);
         list.displayAll();
+        System.out.println("---UC2---");
+        LinkedProblems<Integer> list2 = new LinkedProblems<>();
+        list2.addFirst(70);
+        list2.addFirst(30);
+        list2.addFirst(56);
+        list2.displayAll();
 
     }
 }
