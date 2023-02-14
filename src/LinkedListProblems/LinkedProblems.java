@@ -19,10 +19,22 @@ public class LinkedProblems<Integer> {
 
         if(tail == null){
 
-            tail =head;
+            tail = head;
 
         }
 
+        size++;
+    }
+
+    public void addLast(Integer val){
+
+        if (tail == null){
+            addFirst(val);
+            return;
+        }
+        Node node = new Node(val);
+        tail.next = node;
+        tail = node;
         size++;
     }
 
