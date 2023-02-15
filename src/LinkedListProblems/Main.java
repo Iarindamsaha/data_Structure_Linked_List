@@ -37,6 +37,14 @@ public class Main {
         list5.displayAll();
         System.out.println("Deleted Item Is : " + list5.pop());
         list5.displayAll();
+        System.out.println("---UC6---");
+        LinkedProblems<Integer> list6 = new LinkedProblems<>();
+        list6.addFirst(56);
+        list6.addLast(30);
+        list6.addLast(70);
+        list6.displayAll();
+        System.out.println("The Deleted Item is : " + list6.popLast());
+        list6.displayAll();
 
 
     }

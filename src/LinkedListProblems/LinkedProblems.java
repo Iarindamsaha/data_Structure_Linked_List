@@ -71,6 +71,17 @@ public class LinkedProblems<Integer> {
         return value;
     }
 
+    public Integer popLast(){
+        if (size < 1){
+        return pop();
+        }
+        Node secondLast =get(size-2);
+        Integer value = (Integer) tail.value;
+        tail =secondLast;
+        tail.next = null;
+        return value;
+    }
+
 
 
     public void displayAll(){
@@ -88,6 +99,15 @@ public class LinkedProblems<Integer> {
             }
             System.out.println("End of the List");
         }
+    }
+
+    //Adding a get method to get a reference pointer to that particular index
+    public Node get (int index){
+        Node node = head;
+        for(int i = 0; i < index; i++){
+            node = node.next;
+        }
+        return node;
     }
 
 
