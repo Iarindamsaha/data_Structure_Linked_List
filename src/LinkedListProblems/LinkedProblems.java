@@ -143,6 +143,35 @@ public class LinkedProblems<Integer> {
 
     }
 
+    public void sort(){
+
+        Node<Integer> temp = head;
+        Node<Integer> store =null;
+
+        Integer num;
+
+        if (head == null){
+            return;
+        }
+
+        while (temp != null){
+
+            store = temp.next;
+
+            while(store != null ){
+                int num1 = (int) temp.value;
+                int num2 = (int) store.value;
+                if(num1 > num2){
+                    num = temp.value;
+                    temp.value =store.value;
+                    store.value = num;
+                }
+                store = store.next;
+            }
+            temp = temp.next;
+        }
+    }
+
 
     //Adding a get method to get a reference pointer to that particular index
     public Node get (int index){

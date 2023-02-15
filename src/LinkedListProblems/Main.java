@@ -81,6 +81,17 @@ public class Main {
         list9.displayAll();
         list9.size();
 
+        System.out.println("---UC10---");
+        LinkedProblems<Integer> list10 = new LinkedProblems<>();
+        list10.addFirst(56);
+        list10.addLast(30);
+        list10.addLast(40);
+        list10.addLast(70);
+        list10.displayAll();
+        list10.sort();
+        System.out.println("---After Sorting The List In Ascending Order---");
+        list10.displayAll();
+
 
 
 
