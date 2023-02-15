@@ -45,6 +45,13 @@ public class Main {
         list6.displayAll();
         System.out.println("The Deleted Item is : " + list6.popLast());
         list6.displayAll();
+        System.out.println("---UC7---");
+        LinkedProblems<Integer> list7 = new LinkedProblems<>();
+        list7.addFirst(56);
+        list7.addLast(30);
+        list7.addLast(70);
+        list7.displayAll();
+        System.out.println("The Value is Available At Index : " + list7.search(70));
 
 
     }

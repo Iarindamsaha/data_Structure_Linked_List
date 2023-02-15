@@ -101,6 +101,23 @@ public class LinkedProblems<Integer> {
         }
     }
 
+    public int search(Integer value){
+        Node node = head;
+        int index = 0;
+
+        while (node != null){
+
+            if ( node.value == value){
+                return index;
+            }
+            node = node.next;
+            index++;
+        }
+        return 0;
+
+    }
+
+
     //Adding a get method to get a reference pointer to that particular index
     public Node get (int index){
         Node node = head;
