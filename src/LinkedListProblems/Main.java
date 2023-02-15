@@ -58,7 +58,7 @@ public class Main {
         list7.addLast(30);
         list7.addLast(70);
         list7.displayAll();
-        System.out.println("The Value is Available At Index : " + list7.search(70));
+        System.out.println("The Value is Available At Index : " + list7.search(30));
 
         System.out.println("---UC8---");
         LinkedProblems<Integer> list8 = new LinkedProblems<>();
@@ -69,6 +69,17 @@ public class Main {
         System.out.println("The Value is Available At Index : " + list7.search(30));
         list8.insert(40,2);
         list8.displayAll();
+
+        System.out.println("---UC9---");
+        LinkedProblems<Integer> list9 = new LinkedProblems<>();
+        list9.addFirst(56);
+        list9.addLast(30);
+        list9.addLast(40);
+        list9.addLast(70);
+        list9.displayAll();
+        list9.popLocation(40);
+        list9.displayAll();
+        list9.size();
 
 
 

@@ -82,6 +82,32 @@ public class LinkedProblems<Integer> {
         return value;
     }
 
+    public Integer popLocation(Integer value){
+
+        Node temp = head;
+
+        int index = 0;
+        int indexPoint;
+
+        while (temp != null){
+
+            if ( temp.value == value){
+                indexPoint = index;
+                Node <Integer> prev = get(indexPoint - 1);
+                prev.next = prev.next.next;
+                size --;
+
+            }
+            temp = temp.next;
+            index++;
+        }
+        return null;
+    }
+
+    public void size(){
+        System.out.println(size);
+    }
+
 
 
     public void displayAll(){
