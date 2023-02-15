@@ -51,7 +51,7 @@ public class Main {
         list7.addLast(30);
         list7.addLast(70);
         list7.displayAll();
-        System.out.println("The Value is Available At Index : " + list7.search(70));
+        System.out.println("The Value is Available At Index : " + list7.search(30));
 
 
     }
